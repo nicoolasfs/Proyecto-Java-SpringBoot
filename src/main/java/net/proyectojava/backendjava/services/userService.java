@@ -5,14 +5,10 @@ import org.springframework.stereotype.Service;
 import net.proyectojava.backendjava.shared.dtos.UserDto;
 
 @Service
-public class userService implements userServiceInterface {
-
+public class UserService implements UserServiceInterface {
     @Override
-    public UserDto createUser(UserDto user) {
-        // TODO logica de creación de usuario
-        return null;
+    public UserDto createUser(UserDto userDto) {
+        return userDto;
     }
+}
     
-    }
-
-   

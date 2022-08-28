@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import net.proyectojava.backendjava.models.request.UserDetailRequestModel;
 import net.proyectojava.backendjava.models.responses.UserRest;
-import net.proyectojava.backendjava.services.userServiceInterface;
+import net.proyectojava.backendjava.services.UserServiceInterface;
 import net.proyectojava.backendjava.shared.dtos.UserDto;
 
 @RestController
@@ -18,7 +18,7 @@ import net.proyectojava.backendjava.shared.dtos.UserDto;
 public class UserController {
     
     @Autowired
-    userServiceInterface userService;
+    UserServiceInterface userService;
     /**
      * Esta función devuelve una cadena "obtener detalles del usuario" cuando se realiza una solicitud
      * GET al punto final /usuario
